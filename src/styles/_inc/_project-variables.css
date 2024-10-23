@@ -1,0 +1,29 @@
+:root {
+    --font-size-xl: 70px;
+    --font-size-l: 24px;
+    --font-size-m: 20px;
+    --font-size-s: 16px;
+    --font-size-xs: 14.2px;
+
+    @media(min-width: 768px){
+        --font-size-xl: 120px;
+    }
+
+    --font-family: "Montserrat", sans-serif;
+    --font-family-heading: "Dinamit", sans-serif;
+
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+    --color-main: #404041;
+    --color-white: #FFFFFF;
+    --color-dark: #2B3035;
+    --color-light: #EEEEEE;
+    --color-highlight: #FFCB04;
+
+    --transition-duration: .25s;
+
+    --container-width: 1170px;
+    --container-padding: 1.25rem;
+    --container-side-gap: max((100dvw - 1170px) /2, 1.25rem);
+}

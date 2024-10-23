@@ -1,0 +1,9 @@
+{
+  "nipError": "NIP lub numer klienta muszą mieć 10 cyfr.",
+  "phoneError": "Numer telefonu musi mieć 9 cyfr lub z dodatkiem '+48'.",
+  "formSubmitSuccess": "Formularz został poprawnie przesłany!",
+  "formSubmitError": "Proszę poprawić błędy w formularzu.",
+  "nameError": "Imię i nazwisko jest wymagane.",
+  "emailError": "Nieprawidłowy adres e-mail.",
+  "formSendError": "Nie udało się wysłać wiadomości e-mail."
+}

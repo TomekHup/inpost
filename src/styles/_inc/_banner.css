@@ -1,0 +1,143 @@
+.banner {
+    @media (min-width: 768px) {
+        position: relative;
+        padding-bottom: 4.5rem;
+    }
+
+    .banner__image-wrapper {
+        position: relative;
+        display: flex;
+
+        .banner__image {
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            min-height: 35vh;
+            max-height: 45vh;
+
+            @media(max-width: 767.98px){
+                object-position: 54%;
+            }
+        }
+
+        .banner__logo {
+            position: absolute;
+            top: .75rem;
+            right: var(--container-padding);
+            z-index: 1;
+            max-width: 20%;
+            min-width: 120px;
+            height: auto;
+            max-height: 9dvh;
+
+            @media (min-width: 1400px) {
+                top: 1.5rem;
+                transform: translateX(65%);
+                max-height: none;
+            }
+        }
+
+        & > .container{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .banner__pin {
+        position: absolute;
+        bottom: 0;
+        left: var(--container-padding);
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-wrap: balance;
+
+
+        @media (min-width: 1200px) {
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+        }
+
+        .pin__text {
+            background-color: var(--color-main);
+            color: var(--color-white);
+            padding: .35rem var(--container-padding);
+            @media (max-width: 767.98px) {
+                font-size: var(--font-size-m);
+            }
+        }
+
+        .pin__img {
+            @media (min-width: 1200px) {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translate(-100%, 100%);
+            }
+        }
+    }
+
+    .banner__caption {
+        background-color: var(--color-highlight);
+        text-wrap: balance;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            .heading{
+                max-width: calc(50% - 3.25rem - 2*var(--container-padding));
+                margin-left: 3.25rem;
+            }
+        }
+    }
+
+    .banner__contact {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-light);
+        padding: 1.5rem 0;
+        z-index: 1;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            max-width: 502px;
+            right: var(--container-side-gap);
+        }
+
+        .contact__description {
+            padding-bottom: 1rem;
+        }
+
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+
+            .form__item {
+                font-size: var(--font-size-xs);
+                padding: 1rem;
+                margin: .5rem 0;
+                border: none;
+
+                @media (min-width: 768px) {
+                    margin: .675rem 0;
+                }
+            }
+
+            .form__message {
+                margin-top: 1rem;
+                font-size: var(--font-size-xs);
+            }
+
+            .form__button {
+                align-self: center;
+            }
+        }
+    }
+}
