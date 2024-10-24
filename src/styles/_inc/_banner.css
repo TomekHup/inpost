@@ -13,10 +13,10 @@
             max-width: 100%;
             object-fit: cover;
             min-height: 35vh;
-            max-height: 45vh;
+            max-height: 50vh;
 
             @media(max-width: 767.98px){
-                object-position: 54%;
+                object-position: 58%;
             }
         }
 
@@ -33,7 +33,7 @@
             @media (min-width: 1400px) {
                 top: 1.5rem;
                 transform: translateX(65%);
-                max-height: none;
+                max-height: 11vh;
             }
         }
 
