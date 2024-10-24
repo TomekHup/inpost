@@ -50,7 +50,7 @@ module.exports = () => {
         config.mode = 'production';
         config.plugins = [...config.plugins, new CopyPlugin({
             patterns: [
-                {from: './public/img', to: './img'}
+                {from: './public/img', to: './img'},
                 {from: './public/messages.json', to: './'}
             ],
         })];
