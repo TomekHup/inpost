@@ -51,6 +51,7 @@ module.exports = () => {
         config.plugins = [...config.plugins, new CopyPlugin({
             patterns: [
                 {from: './public/img', to: './img'}
+                {from: './public/messages.json', to: './'}
             ],
         })];
     } else {
