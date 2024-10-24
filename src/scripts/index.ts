@@ -2,7 +2,7 @@ import {getValidationMessages, validateForm} from './validation';
 
 const sendEmail = async (data: { name: string; phone: string; email: string; nip: string }): Promise<string> => {
   const url = process.env.NODE_ENV === 'production'
-   ? '/.netlify/functions/send-email'
+   ? '/functions/send-email'
   : 'http://localhost:3000/send-email';
 
   const response = await fetch(url, {
